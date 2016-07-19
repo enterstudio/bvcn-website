@@ -1,0 +1,66 @@
+# ----
+# Site
+
+title: Scholar
+description: Jekyll template for product documentation.
+url: https://example.com
+google_analytics_key:
+show_full_navigation: true
+
+author:
+  name:
+  email:
+  twitter: # twitter username without the @ symbol
+
+# -----
+# Build
+
+permalink: pretty
+
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+
+exclude:
+  - readme.md
+  - LICENCE
+
+collections:
+  docs:
+    title: Documentation
+    permalink: /:path/
+    output: true
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+  -
+    scope:
+      path: ""
+      type: "docs"
+    values:
+      seo:
+        type: Article
+      _comments:
+        category: Group navigation links with this field
+        order: Used to sort links in the navigation
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      _comments:
+        type: Marks the impact of this release
+
+# -----------
+# CloudCannon
+
+version: 3.0.3
+
+types:
+  - minor
+  - major
