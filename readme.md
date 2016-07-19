@@ -3,6 +3,8 @@
 Product documentation template for Jekyll. Browse through a [live demo](#TODO).
 Start documenting your product, application, service or website with this configurable theme.
 
+![Scholar template screenshot](images/_screenshot.png)
+
 Scholar was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
 Find more templates and themes at [Jekyll Tips](http://jekyll.tips/templates/).
 
